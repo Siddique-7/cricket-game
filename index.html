@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+
+  <div id="container">
+<h1>Bat Ball Stump Game</h1>
+
+<div class="main">
+
+<button id="bat" onclick="
+  computerChoice= generateCompChoice();
+  resultMsg=getResult('Bat', computerChoice);
+  showResult('Bat', computerChoice, resultMsg);
+"><img id="bat-img" src="bat.png" alt="bat"></button>
+
+<button id="ball" onclick=" 
+  computerChoice= generateCompChoice();
+  resultMsg=getResult('Ball', computerChoice);
+  showResult('Ball', computerChoice, resultMsg);
+"><img id="ball-img" src="ball.png" alt="ball"></button>
+
+<button id="stump" onclick="
+  computerChoice= generateCompChoice();
+  resultMsg=getResult('Stump', computerChoice);
+  showResult('Stump', computerChoice, resultMsg);
+"><img id="stump-img" src="stump.png" alt="stump"></button><br>
+
+<p id="scoreBoard"></p>
+
+<button id="reset">Reset</button>
+
+</div>
+</div>
+
+<script src="cricket.js"></script>
+</body>
+</html>

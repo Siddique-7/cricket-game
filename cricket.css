@@ -1,0 +1,101 @@
+    body{
+      margin: 0;
+      padding: 0;
+      background-image: url("cricket.jpg");
+      background-size: cover;   /* Ensures the image covers the entire screen */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents repetition */
+      text-align: center;
+    }
+
+    h1{
+      color: rgb(17, 255, 0);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    button{
+      margin: 3px;
+      background-color: rgb(244, 196, 255);
+      border-radius: 5px;
+      font-size: 20px;
+      color:rgb(26, 2, 26);
+      width: 80px;
+    }
+    button:hover{
+      color: aqua;
+      background-color: blue;
+      cursor: pointer;
+    }
+   
+    #bat-img, #ball-img, #stump-img {
+     height: 73px;
+    }
+
+    #bat, #ball, #stump{
+      height: 90px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 2px solid green;
+    }
+
+    #reset{
+      border-radius: 8px;
+      border: 2px solid rgb(17, 175, 83);
+    }
+
+     /* Layout adjustments */
+  .main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .main button {
+    margin: 10px;
+  }
+
+  #scoreBoard {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+  }
+
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    button {
+      width: 80px;
+      font-size: 16px;
+    }
+
+    #bat-img, #ball-img, #stump-img {
+      height: 60px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2em;
+    }
+
+    button {
+      width: 70px;
+      font-size: 14px;
+    }
+
+    #bat-img, #ball-img, #stump-img {
+      height: 50px;
+    }
+
+    #scoreBoard {
+      font-size: 18px;
+    }
+  }
